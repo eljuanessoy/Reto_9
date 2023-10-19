@@ -48,10 +48,60 @@ if __name__ == "__main__":
 ```
 ### 2. De los retos anteriores selecione 3 funciones y escribalas con argumentos no definidos (*args).
 
-
++ Diseñe una función que calcule la cantidad de carne de aves en kilos si se tienen N gallinas, M gallos y K pollitos cada uno pesando 6 kilos, 7 kilos y 1 kilo respectivamente.
 
 ```python
+def Carne(*args) -> float:
+  TotalCarne = (6*n) + (7*m) + (k)
+  return TotalCarne
 
+if __name__ == "__main__":
+  n = float(input("Ingrese la cantidad de gallinas: "))
+  m = float(input("Ingrese la cantidad de gallos: "))
+  k = float(input("Ingrese la cantidad de pollos: "))
+  TotaldeCarne = Carne(n, m, k)
+  
+  print()
+  print(f"El peso de la carne son {TotaldeCarne}kg")
+```
+
++ Diseñe una función que lea 5 numeros reales y calcule el promedio. 
+
+```python
+def Promedio(*args) -> float:
+    ResultadoPromedio = (a+b+c+d+e)/5
+    return ResultadoPromedio
+
+if __name__ == "__main__":
+  a = float(input("Ingrese un número real: "))
+  b = float(input("Ingrese un número real: "))
+  c = float(input("Ingrese un número real: "))
+  d = float(input("Ingrese un número real: "))
+  e = float(input("Ingrese un número real: "))
+  PromedioFinal = Promedio(a, b, c, d, e)
+
+  print()
+  print("El promedio es " +str(PromedioFinal))
+```
+
++ Diseñe una función que lea 5 numeros reales y calcule la raíz cubica del menor numero. 
+
+```python
+def RaizCubica(*args) -> float:
+    ListaE = [*args]
+    menor1 = min(ListaE)
+    ResultadoRaizCubica = menor1**(1/3)
+    return ResultadoRaizCubica
+
+if __name__ == "__main__":
+  a = float(input("Ingrese un número real: "))
+  b = float(input("Ingrese un número real: "))
+  c = float(input("Ingrese un número real: "))
+  d = float(input("Ingrese un número real: "))
+  e = float(input("Ingrese un número real: "))
+  RaizCubicaFinal = RaizCubica(a, b, c, d, e)
+
+  print("La raíz cúbica del menor número es: " +str(RaizCubicaFinal))
 ```
 
 ### 3. Escriba una función recursiva para calcular la operación de la potencia.
