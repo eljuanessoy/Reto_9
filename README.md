@@ -106,10 +106,22 @@ if __name__ == "__main__":
 
 ### 3. Escriba una función recursiva para calcular la operación de la potencia.
 
-
++ Desarrollé una función que se invoca a sí misma para realizar la multiplicación. En cada iteración se le resta a la potencia una unidad hasta que se haya realizado la multiplicación un total de n veces. Y a partr de esto le pido al usuario que ingrese los valores de la base y el numero al cual sera elevado y se imprime el resultado.
 
 ```python
+def Potencia_recursiva(n:int, x:float):
+  if n == 0:
+    return 1
+  elif n == 1:
+    return x
+  else:
+    return x * Potencia_recursiva(n-1, x)
 
+if __name__ == "__main__":
+  n = int(input("Ingrese un numero natural: "))
+  x = float(input("Ingrese un numero real: "))
+  Resultado = Potencia_recursiva(n, x)
+  print(f"{x}^{n}={Resultado}")
 ```
 
 ### 4. Utilice la siguiente plantilla de code para contar el tiempo:
