@@ -1,4 +1,4 @@
-# Reto #8 😲
+# Reto #9 😲
 By Juan Esteban Molina Rey (eljuanessoy)
 
 ### 1. De los retos anteriores selecione 3 funciones y escribalas en forma de lambdas.
